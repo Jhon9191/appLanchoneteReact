@@ -1,28 +1,24 @@
-
 import { useState, useEffect } from 'react';
 
 import './signin.css';
 import IputText from '../../Components/InputText';
+import InputTextSecure from '../../Components/InputTextSecure';
+
 
 function SignIn() {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [secure,setSecure] = useState(false);
-
-  useEffect(() => {
-    console.log(secure)
-  },[secure]);
+  const [secure,setSecure] = useState(true);
 
   const retorna = () => {
-    return setSecure(!secure);
+    setSecure(!secure);
   }
 
   return (
     <div>
       <IputText placeholder="E-mail"/>
-      <IputText placeholder="Password" type="password"hasIcon={true} funcao={retorna}/>
-      <IputText placeholder="Secret key" type="text"/>
+      <InputTextSecure placeholder="password" hasIcon={true} funcao={retorna} secure={secure}/>
     </div>
   );
 }
