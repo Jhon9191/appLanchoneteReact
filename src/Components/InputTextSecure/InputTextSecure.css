@@ -5,25 +5,15 @@
     background-color: #dfdddd;
     width: 360px;
     height: 25px;
-    padding: 20px;
     margin: 3px;
     border-radius: 7px;
 }
 .input input{
     border: 0;
     background-color: transparent;
-    width: 90%;
     font-size: 1em;
     font-weight: bold;
     color: rgba(215, 0, 82, 0.7);
-}
-
-.input spam{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgba(215, 0, 82, 0.7);
-    font-size: 1em;
-    background-color: transparent;
-    border-width: 0px;
 }
 
 .button{

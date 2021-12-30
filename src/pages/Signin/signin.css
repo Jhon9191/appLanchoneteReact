@@ -8,12 +8,14 @@
 }
 
 .login{
+  padding: 40px;
   background: #EAEAEC;
   width: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-radius: 12px;
 }
 
 .login-area{
@@ -40,16 +42,6 @@ form h1{
   text-align: center;
   margin-bottom: 0.5em;
   color: #181c2e;
-}
-
-.login input{
-  margin-bottom: 15px;
-  height: 35px;
-  border:0;
-  border-radius: 7px;
-  padding: 10px;
-  font-size: 15px;
-  background-color: #FFF;
 }
 
 form button{
