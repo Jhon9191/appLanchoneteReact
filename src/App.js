@@ -1,12 +1,14 @@
-import style from './App.css';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-//import firebase from '../src/services/firebase'
+import Route from './Routes';
+//import firebase from './services/firebase';
 
 function App() {
   return (
-    <div>
-      <h1>oi</h1>
-    </div>
+    <BrowserRouter>
+      <Route/>
+    </BrowserRouter>
   );
 }
 
