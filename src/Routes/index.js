@@ -10,7 +10,6 @@ export default function Routes(){
     <Switch>
       <Route exact path="/" component={Signin} />
       <Route exact path="/register" component={Signup} />
-
       <Route exact path="/dashboard" component={Dashboard} isPrivate />
     </Switch>
   )
