@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(215, 0, 82, 0.7);;
+    background-color: rgba(215, 0, 82, 0.7);
     width: 360px;
     height: 25px;
     padding: 20px;
@@ -16,9 +16,8 @@
 }
 
 .buttonForm:hover{
-    border-color: #D70052;
-    background-color: #D70052;
-    color: #262626;
+    background-color: #eb0a60;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .buttonForm spam{
