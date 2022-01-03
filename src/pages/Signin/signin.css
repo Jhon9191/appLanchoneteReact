@@ -17,10 +17,6 @@
   border-radius: 12px;
 }
 
-.login a{
-  color:rgb(248, 0, 0);
-}
-
 .login-area{
   display: flex;
   justify-content: center;
@@ -57,9 +53,22 @@ form button{
 }
 
 .login a{
-  margin: 1.5em 0;
-  color: #000;
+  margin: 1em ;
+  color: #b3094a;
+  font-weight: bold;
   cursor: pointer;
 }
 
+.login h2{
+  font-family: "Helvetica Neue", "Helvetica";
+  font-size: 3em;
+  color: #b3094a;
+  justify-content: right;
+}
+
+.login h4{
+  font-size: 1.2em;
+  color: #dd115f;
+  justify-content: right;
+}
 

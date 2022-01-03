@@ -12,7 +12,7 @@ function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [secretKey, setSecretKey] = useState('');
-  const [secure,setSecure] = useState(true);
+  const [secure, setSecure] = useState(true);
 
   const retorna = () => {
     setSecure(!secure);
@@ -25,12 +25,15 @@ function SignIn() {
   return (
     <div className="container-center">
       <div className="login">
-      <h2>Já tem cadastro?</h2>
-      <IputText placeholder="E-mail" funcao={(e) => setEmail(e.target.value)}/>
-      <IputText placeholder="Secret key" funcao={(e) => setSecretKey(e.target.value)}/>
-      <InputTextSecure placeholder="Password" onChange={(e) => setPassword(e.target.value)} hasIcon={true} funcao={retorna} secure={secure}/>
-      <Button name="Entrar"/>
-      <Link to="/register">Criar uma nova conta</Link>
+        <div style={{width: '65%', margin: 6, display: 'flex', flexDirection: 'column'}}>
+          <h2>Efetuar login</h2>
+          {/* <h4>Realize já seu login</h4> */}
+        </div>
+        <IputText placeholder="Secret key" funcao={(e) => setSecretKey(e.target.value)} />
+        <IputText placeholder="E-mail" funcao={(e) => setEmail(e.target.value)} />
+        <InputTextSecure placeholder="Password" onChange={(e) => setPassword(e.target.value)} hasIcon={true} funcao={retorna} secure={secure} />
+        <Button name="Entrar" />
+        <Link className="link" to="/register">Criar uma nova conta</Link>
       </div>
     </div>
   );
